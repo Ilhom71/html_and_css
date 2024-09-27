@@ -1,0 +1,17 @@
+body{
+    background-image: url("./bac.gif");
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.box{
+    width: 1900px;
+    height: 800px;
+    background-image: url("ronaldo_orig.gif"),url("200.gif"),url("200w.gif"),url("muhammad-ali.png"),url("./Remove-bg.ai_1722685141146.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px,1100px 450px,1100px 0px,0px 450px,300px 170px,300px 170px;
+    background-size: 250px 250px,250px 250px,250px 250px,250px 250px,1000px 550px;
+
+   
+}
