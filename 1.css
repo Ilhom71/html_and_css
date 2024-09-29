@@ -1,120 +1,158 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-header{
-    width: 100%;
-    height: 670px;
-   
-    padding: 26px 96px 0px;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.header_bg{
-    width: 100%;
-    height: 570px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: #0e0e0e;
-    z-index: -1;
-}
-
-
-.header_nav{
-    width: 100%;
-    height: 38px;
- 
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.header_nav h1{
-    font-size: 20px;
-    font-family: "inter",sans-serif;
-    margin: 0;
-
-}
-.header_nav .menu{
-    width: 45%;
-    height: 26px;
-    
-    display: flex;
-    justify-content: space-between;
-}
-.menu .text_menu{
-    width: 70%;
-    height: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "inter",sans-serif;
-    font-size: 16px;
-}
-.header_nav .icons{
-    width: 15%;
-    height: 26px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header_img{
-    width: 100%;
-    height: 580px;
-   
-    background-image: url("./bg.jpg");
+body {
+    background-image: url("./istockphoto-1502846052-612x612.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   padding-left: 200px;
-   box-sizing: border-box;
-}
-.header_img h1{
-    font-size: 70px;
-    color: #ffffff;
-    font-family: "inter",sans-serif;
-    font-weight: 500;
-    margin: 0;
+    background-size: 100% 660px;
 }
 
-.hr{
-    width: 6%;
-    height: 1px;
-    background-color: #ffffff;
-    margin-top: 7%;
-    margin-bottom: 50px;
-}
-.header_img .box{
-    width: 90px;
-    height: 90px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ball {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    display: inline-block;
+    position: relative;
+    top: -120px;
+    left: 600px;
     border-radius: 50%;
-    margin-left: 70%;
-    cursor:pointer;
-    font-family: "inter",sans-serif;
-    font-size: 500;
-   
+    text-align: center;
+    line-height: 100px;
+    vertical-align: top;
+    animation: ball 10s linear 1;
+    background-image: url("ball.png");
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: 120px 100px;
+    background-position: -7px 0px;
+
+
 
 }
-.header_img .number{
-    color: #ffffff;
-    font-size: 14px;
-    word-spacing: 10px;
-   
+
+@keyframes ball {
+    0% {
+        top: -120px;
+    }
+
+    10% {
+        top: 550px;
+    }
+
+    15% {
+        top: 500px;
+    }
+
+    20% {
+        top: 550px;
+    }
+
+    30% {
+        top: 500px;
+    }
+
+    40% {
+        top: 550px;
+    }
+
+    50% {
+        top: 550px;
+
+    }
+
+    60% {
+        top: 550px;
+        left: 600px;
+        background-size: 120px 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+
+  
+
+    80% {
+        left: 1200px;
+        top: 490px;
+        width: 50px;
+        height: 50px;
+        background-size: 60px 50px;
+
+    }
+
+    100% {
+
+        left: 1200px;
+        top: 490px;
+        width: 50px;
+        height: 50px;
+        background-size: 60px 50px;
+
+
+    }
+}
+
+.man {
+    width: 180px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    top: 250px;
+    left: -350px;
+    text-align: center;
+    line-height: 400px;
+    animation: man 3s linear 5.5s;
+    background-image: url("man.png");
+    background-repeat: no-repeat;
+    background-size: 250px 400px;
+    background-position: -50px;
+
+
+}
+
+@keyframes man {
+    0% {
+        left: -350px;
+
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: 500px;
+    }
+
+}
+
+.box {
+    width: 400px;
+    height: 200px;
+
+    display: inline-block;
+    position: absolute;
+    left: 1200px;
+    top: 350px;
+    text-align: center;
+    background-image: url("darvoza.png");
+    background-repeat: no-repeat;
+    background-size: 500px 250px;
+    background-position: -50px -0px;
+    z-index: -1;
+
+
+
+}
+
+.ground {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    background-color: black;
+    color: red;
+    text-transform: capitalize;
+    font-size: 70px;
+    font-family: fantasy;
+
+
 }
