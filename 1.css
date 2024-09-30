@@ -1,158 +1,22 @@
-body {
-    background-image: url("./istockphoto-1502846052-612x612.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 660px;
-}
+img{
+opacity: 0.7;
+width: 280px;
+height: 200px;
+margin:  160px  500px;
+position: relative;
 
-.ball {
-    width: 100px;
-    height: 100px;
-    border: 1px solid;
+}
+img::after{
     display: inline-block;
-    position: relative;
-    top: -120px;
-    left: 600px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: top;
-    animation: ball 10s linear 1;
-    background-image: url("ball.png");
-    background-color: aliceblue;
-    background-repeat: no-repeat;
-    background-size: 120px 100px;
-    background-position: -7px 0px;
-
-
-
-}
-
-@keyframes ball {
-    0% {
-        top: -120px;
-    }
-
-    10% {
-        top: 550px;
-    }
-
-    15% {
-        top: 500px;
-    }
-
-    20% {
-        top: 550px;
-    }
-
-    30% {
-        top: 500px;
-    }
-
-    40% {
-        top: 550px;
-    }
-
-    50% {
-        top: 550px;
-
-    }
-
-    60% {
-        top: 550px;
-        left: 600px;
-        background-size: 120px 100px;
-        width: 100px;
-        height: 100px;
-    }
-
-
-  
-
-    80% {
-        left: 1200px;
-        top: 490px;
-        width: 50px;
-        height: 50px;
-        background-size: 60px 50px;
-
-    }
-
-    100% {
-
-        left: 1200px;
-        top: 490px;
-        width: 50px;
-        height: 50px;
-        background-size: 60px 50px;
-
-
-    }
-}
-
-.man {
-    width: 180px;
-    height: 400px;
-    display: inline-block;
-    position: relative;
-    top: 250px;
-    left: -350px;
-    text-align: center;
-    line-height: 400px;
-    animation: man 3s linear 5.5s;
-    background-image: url("man.png");
-    background-repeat: no-repeat;
-    background-size: 250px 400px;
-    background-position: -50px;
-
-
-}
-
-@keyframes man {
-    0% {
-        left: -350px;
-
-    }
-
-    10% {
-        left: 0px;
-    }
-
-    20% {
-        left: 500px;
-    }
-
-}
-
-.box {
-    width: 400px;
+    width: 280px;
     height: 200px;
-
-    display: inline-block;
     position: absolute;
-    left: 1200px;
-    top: 350px;
-    text-align: center;
-    background-image: url("darvoza.png");
-    background-repeat: no-repeat;
-    background-size: 500px 250px;
-    background-position: -50px -0px;
-    z-index: -1;
-
+    border: 1px solid red;
+    top: 0px; 
+    left: 200px;
 
 
 }
-
-.ground {
-    width: 100%;
-    height: 80px;
-    position: relative;
-    top: 250px;
-    text-align: center;
-    background-color: black;
-    color: red;
-    text-transform: capitalize;
-    font-size: 70px;
-    font-family: fantasy;
-
-
+img:hover{
+    opacity: 1;
 }
